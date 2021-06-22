@@ -47,15 +47,11 @@ export const createEmployee = (
 	return new Director();
 };
 
-export const isDirector = (
-	employee: DirectorInterface | TeacherInterface
-): employee is Director => {
+export function isDirector(employee: DirectorInterface | TeacherInterface): employee is Director {
 	return employee.workFromHome() === 'Working from home';
 };
 
-export function executeWork(
-	employee: DirectorInterface | TeacherInterface
-): string {
+export function executeWork(employee: DirectorInterface | TeacherInterface): string {
 	if (isDirector(employee)) {
 		return employee.workDirectorTasks();
 	}
