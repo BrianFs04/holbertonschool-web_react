@@ -49,7 +49,7 @@ export const isDirector = (employee: DirectorInterface | TeacherInterface): empl
     return employee.workFromHome() === 'Working from home';
 }
 
-export const executeWork = (employee: DirectorInterface | TeacherInterface): string => {
+export function executeWork(employee: DirectorInterface | TeacherInterface): string {
     if(isDirector(employee)) {
         return employee.workDirectorTasks();
     }
