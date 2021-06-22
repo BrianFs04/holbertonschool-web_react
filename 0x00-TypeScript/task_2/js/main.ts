@@ -50,7 +50,7 @@ export const isDirector = (employee: DirectorInterface | TeacherInterface): empl
 }
 
 export function executeWork(employee: DirectorInterface | TeacherInterface): string {
-    if(isDirector(employee)) {
+    if (isDirector(employee)) {
         return employee.workDirectorTasks();
     }
     return employee.workTeacherTasks();
