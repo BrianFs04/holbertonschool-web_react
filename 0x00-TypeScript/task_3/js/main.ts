@@ -3,7 +3,7 @@ import { RowID, RowElement } from './interface';
 import * as CRUD from './crud';
 
 const row: RowElement = {
-	firstName: 'Guilaume',
+	firstName: 'Guillaume',
 	lastName: 'Salva',
 };
 
