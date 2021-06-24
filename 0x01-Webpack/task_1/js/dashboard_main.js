@@ -8,19 +8,11 @@ $(() => {
 		$('#count').text(`${count} clicks on the button`);
 	};
 
-	$('body').prepend(
-		$('<p>').text('Holberton Dashboard'),
-		$('<p>').text('Dashboard data for the students'),
-		$('<button>')
-			.text('Click here to get started')
-			.on(
-				'click',
-				_.debounce(updateCounter, 500, {
-					leading: true,
-					trailing: false,
-				})
-			),
-		$('<p>').attr({ id: 'count' }),
-		$('<p>').text('Coyright - Holberton School')
-	);
+	$('body').append('<p>Holberton Dashboard</p>');
+	$('body').append('<p>Dashboard data for the students</p>');
+	$('body').append('<button>Click here to get started</button>');
+	$('body').append('<p id="count"></p>');
+	$('body').append('<p>Copyright - Holberton School</p>');
+
+	$('button').on('click', _.debounce(updateCounter, 500));
 });
