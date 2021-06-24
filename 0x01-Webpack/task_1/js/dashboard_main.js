@@ -15,7 +15,7 @@ $(() => {
 			.text('Click here to get started')
 			.on(
 				'click',
-				_.debounce(updateCounter, 300, {
+				_.debounce(updateCounter, 500, {
 					leading: true,
 					trailing: false,
 				})
