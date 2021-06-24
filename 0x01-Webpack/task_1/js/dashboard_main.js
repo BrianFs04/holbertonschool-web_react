@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import _, { update } from 'lodash';
+import _ from 'lodash';
 
 $(() => {
 	let count = 0;
