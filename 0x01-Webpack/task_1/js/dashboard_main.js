@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import _ from 'lodash';
+const _ = require('loadash');
 
 let count = 0;
 function updateCounter() {
