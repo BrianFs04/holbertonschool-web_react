@@ -3,10 +3,10 @@ import _, { update } from 'lodash';
 
 $(() => {
 	let count = 0;
-	const updateCounter = () => {
+	function updateCounter() {
 		count += 1;
 		$('#count').text(`${count} clicks on the button`);
-	};
+	}
 
 	$('body').append('<p>Holberton Dashboard</p>');
 	$('body').append('<p>Dashboard data for the students</p>');
