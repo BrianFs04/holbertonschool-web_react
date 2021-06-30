@@ -1,0 +1,20 @@
+.App-header {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	color: #ce314b;
+	border-bottom: 3px solid #ce314b;
+}
+
+.App-body {
+	margin: 50px;
+}
+
+.App-footer {
+	position: fixed;
+	text-align: center;
+	font-style: italic;
+	border-top: 3px solid #ce314b;
+	bottom: 0;
+	width: 99%;
+}
