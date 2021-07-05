@@ -1,0 +1,25 @@
+.Notifications {
+	border: 1px dashed #ce314b;
+	padding: 5px;
+	height: 100px;
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	width: 410px;
+}
+
+.Notifications p {
+	margin-top: 4px;
+}
+
+ul li[data-notification-type='default'] {
+	color: darkblue;
+}
+
+ul li[data-notification-type='urgent'] {
+	color: red;
+}
+
+.menuItem {
+	float: right;
+}
