@@ -66,10 +66,12 @@ class App extends React.Component {
 				<Notifications listNotifications={listNotifications} />
 				<div className={css(styles.font)}>
 					<Header />
-					{isLogged}
-					<BodySection title={'News from the School'}>
-						<p>Enjoy the silence</p>
-					</BodySection>
+					<div className={css(styles.bodySection)}>
+						{isLogged}
+						<BodySection title={'News from the School'}>
+							<p>Enjoy the silence</p>
+						</BodySection>
+					</div>
 					<div className={css(styles.appFooter)}>
 						<Footer />
 					</div>
@@ -82,6 +84,10 @@ class App extends React.Component {
 const styles = StyleSheet.create({
 	font: {
 		fontFamily: 'sans-serif',
+	},
+
+	bodySection: {
+		paddingLeft: '20px',
 	},
 
 	appFooter: {

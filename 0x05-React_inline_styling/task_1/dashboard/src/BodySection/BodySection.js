@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet, css, minify } from 'aphrodite';
-
-minify(false);
+import { StyleSheet, css } from 'aphrodite';
 
 class BodySection extends React.Component {
 	constructor(props) {
@@ -11,18 +9,14 @@ class BodySection extends React.Component {
 	render() {
 		const { children, title } = this.props;
 		return (
-			<div className={css(styles.bodySection)} id='bodySection'>
-				<h2>{title}</h2>
-				{children}
-			</div>
+			<>
+				<div id='bodySection'>
+					<h2>{title}</h2>
+					{children}
+				</div>
+			</>
 		);
 	}
 }
-
-const styles = StyleSheet.create({
-	bodySection: {
-		paddingLeft: '20px',
-	},
-});
 
 export default BodySection;
