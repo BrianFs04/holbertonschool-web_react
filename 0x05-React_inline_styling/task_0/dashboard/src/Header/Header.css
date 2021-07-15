@@ -1,0 +1,8 @@
+.App-header {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	color: #ce314b;
+	border-bottom: 3px solid #ce314b;
+	width: 100%;
+}
