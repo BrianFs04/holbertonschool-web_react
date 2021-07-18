@@ -2,14 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
 import CourseList from './CourseList';
-import { StyleSheetTestUtils } from 'aphrodite';
-
-beforeAll(() => {
-	StyleSheetTestUtils.suppressStyleInjection();
-});
-afterAll(() => {
-	StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
-});
 
 describe('With CourseList Empty', () => {
 	const wrapper = shallow(<CourseList />);
