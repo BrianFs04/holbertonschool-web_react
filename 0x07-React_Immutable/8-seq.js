@@ -3,8 +3,8 @@ import { Seq } from 'immutable';
 const printBestStudents = (obj) => {
 	// Filters every student and gets the ones who have more than 70 in score
 	const bestStudents = Seq(obj)
-		.filter((x) => x.score > 70)
-		.toObject();
+		.filter((x) => x.score < 70)
+		.toJS();
 
 	// Converts the first letter to an uppercased one and adds the rest of the string
 	const firstCharToUpperCase = (str) =>
